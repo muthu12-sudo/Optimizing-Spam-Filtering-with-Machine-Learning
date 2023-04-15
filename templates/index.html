@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Optimizing Spam Filtering</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Example color: Light blue */
+}
+
+
+    .header {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .header h1 {
+        font-size: 36px;
+    }
+    .nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .nav a {
+        margin: 0 20px;
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+    }
+    .nav a:hover {
+        color: #007bff;
+    }
+    .spam-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .spam-button button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .spam-button button:hover {
+        background-color: #0056b3;
+    }
+    .about {
+        display: none;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .about p {
+        font-size: 24px;
+        color: #007bff;
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Optimizing Spam Filtering</h1>
+    </header>
+    <nav class="nav">
+        <a href="/">Home</a>
+        <a href="#" onclick="showAbout()">About</a>
+    </nav>
+    <div class="spam-button">
+        <button onclick="location.href='/spam'">Spam</button>
+    </div>
+    <div class="about" id="aboutDiv">
+    <h2>About Us</h2>
+    <p>Welcome to our website on optimizing spam filtering! We are a team of experts in the field of email security, with a mission to help users effectively combat spam and protect their inboxes from unwanted messages. Our cutting-edge algorithms and machine learning techniques are designed to identify and filter out spam messages with high accuracy, while minimizing false positives and negatives.</p>
+    <p>With years of experience and expertise in spam detection and filtering, we are committed to providing state-of-the-art solutions to address the ever-evolving landscape of spam and email threats. Our goal is to empower users with the tools and knowledge needed to optimize their spam filtering strategies and enhance their email security.</p>
+    <p>Thank you for visiting our website. We are dedicated to continually improving our spam filtering techniques and providing the best possible user experience. If you have any questions or feedback, please don't hesitate to contact us.</p>
+</div>
+
+
+    <script>
+    function showAbout() {
+        var aboutDiv = document.getElementById("aboutDiv");
+        if (aboutDiv.style.display === "none") {
+            aboutDiv.style.display = "block";
+        } else {
+            aboutDiv.style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>
